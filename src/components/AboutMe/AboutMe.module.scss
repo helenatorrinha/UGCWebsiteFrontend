@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+.section {
+  height: 100vh;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #60412c, #e9cba9);
+
+  h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: #ffffff;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+  }
+}
+  
