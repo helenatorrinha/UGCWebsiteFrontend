@@ -3,7 +3,6 @@
 .container {
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 1000;
   display: flex;
   flex-direction: row;
@@ -13,15 +12,20 @@
   gap: 20px;
   background-color: $primary-background-color;
 
-  .icon {
-    width: 200px;
+  &.smallNavBar {
+    padding: 0px;
+    padding-top: 10px;
+    width: 100%;
+    gap: 0px;
+
+    .icon{
+      width: 0px; 
+    }
   }
 
-  &.smallNavBar {
-    .icon{
-      width: 100px; 
-    }
-    
+  .icon {
+    width: 200px;
+    transition: width cubic-bezier(0.56, 0, 0.38, 0.99) 1s;
   }
   
   .nav {

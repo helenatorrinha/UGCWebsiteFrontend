@@ -29,13 +29,18 @@ const Navbar: React.FC = () => {
       />
       <nav className={styles.nav}>
         <ul>
+        <li>
+            <Link to="home" smooth duration={100} >
+              HOME
+            </Link>
+          </li>
           <li>
-            <Link to="about" smooth duration={100}>
+            <Link to="about" smooth duration={100} offset={-60}>
               ABOUT ME
             </Link>
           </li>
           <li>
-            <Link to="what-is-ugc" smooth duration={100}>
+            <Link to="what-is-ugc" smooth duration={100} offset={-60}>
               WHAT IS UGC
             </Link>
           </li>
