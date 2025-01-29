@@ -1,5 +1,5 @@
 import styles from './WhatIsUGC.module.scss';
-import whatisugc from '../../assets/whatisugc.jpg'; // Replace with your image path
+import whatisugc from '../../assets/whatisugc.jpg';
 
 const WhatIsUGC = () => {
     return (
