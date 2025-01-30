@@ -11,16 +11,34 @@
 
   h1 {
     font-size: 2.5rem;
-    color: #ffffff;
+    color: $primary-background-color;
     margin-bottom: 20px;
   }
 
   p {
     font-size: 1.25rem;
-    color: #ffffff;
+    color: $primary-background-color;
     max-width: 600px;
     text-align: center;
     line-height: 1.6;
+  }
+  
+  .photo-container {
+    width: 200px;
+    height: 250px;
+    border: 4px solid $primary-background-color;
+    box-shadow: 24px 24px 15px rgba(0, 0, 0, 0.1);
+    
+    @media (min-width: 768px) {
+      width: 300px;
+      height: 400px;
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
   
